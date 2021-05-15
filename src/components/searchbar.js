@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import ShowLocation from './showResults';
 import ShowWeatherLocation from './showWeatherLocation'; 
+import './showData.css';
 export default class SearchBar extends React.Component{
 
     constructor(props){
@@ -37,12 +38,11 @@ export default class SearchBar extends React.Component{
         const listLoc = this.state.results; 
         return(
             <>
-            <div class="input-group">
-        <div class="form-outline">
+            <div class="searchbarS"> 
           <input type="search" id="form1" class="form-control" placeholder="Search" onChange={(e)=>this.stateloc(e)}   />
           
-        </div>
-        <button type="button" class="btn btn-primary" onClick={()=>this.onClick(locationname)} >
+       
+        <button type="button" onClick={()=>this.onClick(locationname)} >
           <i class="fas fa-search">Search</i>
         </button>
       </div>

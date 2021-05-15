@@ -23,6 +23,8 @@ onClickF(woeid){
     return(
 
       <> 
+      <div class="viewStyle">
+       <h3>Results</h3>
       <lu> 
        {
        results.map(result => 
@@ -32,7 +34,8 @@ onClickF(woeid){
          )
          }
          </lu>
-                   
+          
+         </div>         
       </>
 
 );

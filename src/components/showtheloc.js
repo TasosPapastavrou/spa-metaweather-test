@@ -42,8 +42,10 @@ import {
             
 <Link to="/" >search weather in other location</Link>
 <hr></hr>
+<div class="viewStyle">
 {nametown}
 <br></br>
+
 {
             data ?    
             
@@ -74,7 +76,7 @@ import {
                 : <p>.........</p> 
             }   
 
-        
+</div>
         </>
         )
 

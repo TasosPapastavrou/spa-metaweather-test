@@ -1,9 +1,7 @@
 import React,{Component} from 'react';
 import axios from 'axios';
-import {
-    Link
-  } from "react-router-dom";  
-  import './showData.css';
+import {Link} from "react-router-dom";
+import './showData.css';
 export default class SelectDay extends React.Component{
 
     constructor(props){
@@ -58,9 +56,12 @@ export default class SelectDay extends React.Component{
          const weather_state_in_day = this.state.resultsb; 
         return(
             <> 
-            <Link to="/" >search weather in other location</Link>
+            <div class="searchBarPlace"><h3><Link to="/" >search weather in other location</Link></h3></div>
+            
 <hr></hr>
-{townName}
+ <h1>{townName}</h1>
+<div class="placedayWeather">
+
 <br></br>
   
 <div>
@@ -102,6 +103,8 @@ export default class SelectDay extends React.Component{
 
 </div>
 
+
+
 <div class="sourcespos">
 
 {
@@ -127,6 +130,7 @@ export default class SelectDay extends React.Component{
 
 
 
+</div>
 
 
 
@@ -139,35 +143,58 @@ export default class SelectDay extends React.Component{
 
 
 
-<div class="sourcespos">
+
+
+ 
 
 {
             data1===true && data2===true ? 
-            <div>  
+          <>
             <h3>weather_state_in_day</h3> 
-            <div class="container">
-            {
             
-            weather_state_in_day.map( source =>                
-                <div class="row">
-    <div class="col-sm">
-                <lu class="pos" key={source.id}> 
-                <li> weather_state_name:{source. weather_state_name} </li> 
+            <lu>
+            <div class="placedayw"> 
+            {             
+                weather_state_in_day.map( source =>       
+                  
+                <div class="pos">
+                <li> weather_state_name:{source.weather_state_name} </li> 
                 <li>max_temp:{source.max_temp} </li>
                 <li>min_temp:{source.min_temp} </li> 
                 <li>wind_speed:{source.wind_speed}</li>
-                 
-               </lu></div></div>
-                           
-                   
-    )   } </div>
-    </div>
-             
-              
-            : <p>.........</p> 
+                </div>           
+                   )
+    } 
+    </div>  
+    </lu>
+       
+          </> 
+          : <p>.........</p> 
             }  
 
-</div> 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 

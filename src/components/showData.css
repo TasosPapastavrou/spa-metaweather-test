@@ -4,12 +4,94 @@
 }
 .pos{
     border-style: solid;
-    float: left;
     margin:10px;
     padding: 10px;
+    float: left;
+    
+     
 }
 
- .sourcespos{
+.sourcespos{
 
-    margin-top: 2%;
+    margin-top: 2%; 
+    border-style: solid;
+    padding: 3%;
  }
+
+ input{
+
+    width:500px;
+    height:50px;
+
+ }
+
+ .searchbarS{
+     margin-top:3%;
+     margin-left: 40%;
+     flex-wrap: wrap;
+     display: flex;
+   
+
+ }
+
+ button{
+    width: 150px;
+    height:50px;
+ }
+
+ .otherbutton{
+    margin-bottom: 5%;
+    float: right;
+    margin-top:1%;
+ }
+
+ .viewStyle{
+     margin-top:5%;
+     margin-left: 25%;
+     margin-right: 25%;
+ }
+ lu{
+    list-style-type: none;
+ }
+
+ .placeR{
+     margin:auto;
+ }
+ 
+ .placedayWeather{
+
+    margin-left: 35%;
+    padding: 5%;
+    flex-wrap: wrap;
+     display: flex;
+
+ }
+
+ .scrolltext{
+     
+        width: 35%;
+        overflow-x: auto;
+      
+ }
+  h1{
+      margin-left: 10%;
+      margin-top:3%;
+  }
+
+  .searchBarPlace{
+
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+  }
+
+  .alldayweather{
+    width:100%;
+    height: 200px;
+  }
+
+  .placedayw{
+      width:100%;
+      height: 100px;
+  }

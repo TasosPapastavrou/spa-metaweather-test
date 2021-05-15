@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './showData.css';
 import history from './history';
-
+ 
 export default class ShowWeatherLocation extends React.Component{
 
     constructor(props){
@@ -40,9 +40,10 @@ export default class ShowWeatherLocation extends React.Component{
         return(
             <> 
  
-<button onClick={()=>window.location.reload()}>Click for search</button>
+<button class="otherbutton" onClick={()=>window.location.reload()}>Click for search</button>
+<div class="viewStyle">
 <hr></hr>
-{townName}
+<h4>{townName}</h4>
 <br></br>
 {
             data ?              
@@ -74,6 +75,7 @@ export default class ShowWeatherLocation extends React.Component{
               
             : <p>.........</p> 
             }  
+            </div>
             </>
         );
 
