@@ -1,0 +1,15 @@
+.showSt{
+    list-style: none;
+
+}
+.pos{
+    border-style: solid;
+    float: left;
+    margin:10px;
+    padding: 10px;
+}
+
+ .sourcespos{
+
+    margin-top: 2%;
+ }
